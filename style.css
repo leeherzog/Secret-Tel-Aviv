@@ -1,4 +1,9 @@
-body {
+*{
+    -webkit-box-sizing: border-box;
+    overflow-x: hidden;
+    }
+
+    body {
     margin: 0;
     background-color: #ddd;
   }
@@ -69,3 +74,60 @@ body {
   .food img {
     width: 100%;
   }
+  @media (max-width: 700px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .column-70 {
+    width: 70%;
+    float: left;
+    height: 500px;
+    text-align: center;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  .column-30 {
+    width: 30%;
+    float: left;
+    height: 500px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Merriweather';
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .row:before {
+    display: table;
+    content: "";
+  }
+  
+  .row:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+
+  .bar {
+    width:100%;
+  }
+
+  .columninner70{
+      background-color:white;
+  }
+  
+  .columninner30{
+      background-color:white;
+  }
+
+  @media (max-width: 700px) {
+    .column-70 {
+      width: 100%;
+    }
+  }
+
+  
+  
